@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cars.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>EZ Rentals</title>
+</head>
+<body>
+  <div id="error"></div>
+    <nav class="navbar sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><div class="brand-bckgrnd">EZ Rentals</div></a>
+            <div class="navbarTabs">
+            <a href="#whyUs" class="browse-cars"><div class="browse-cars-div">Why us?</div></a>
+            <a href="#policies" class="browse-cars"><div class="browse-cars-div">Contact</div></a>
+            <a href="browsecars.html" class="browse-cars"><div class="browse-cars-div">Browse cars</div></a>
+            </div>
+        </div>
+      </nav>
+    </div>
+
+
+    <div class="banner-div">
+      <form id="form" target="_blank" action="" method="GET">
+        <div class="rental-info">
+            <h1>Cheap car rentals</h1>
+            <p>Seach available cars near you.</p>
+            <input class="location" id="location" type="text" placeholder="Enter your location">
+            <div class="break"></div>
+            <input class="pickup-date" id="pickupDate" type="date">
+            <select class="form-select" id="pickupTime" aria-label="small select example">
+                <option selected>Pick Up</option>
+                <option value="1">12:00 AM</option>
+                <option value="2">12:30 AM</option>
+                <option value="3">1:00 AM</option>
+                <option value="4">1:30 AM</option>
+                <option value="5">2:00 AM</option>
+                <option value="6">2:30 AM</option>
+                <option value="7">3:00 AM</option>
+                <option value="8">3:30 AM</option>
+                <option value="9">4:00 AM</option>
+                <option value="10">4:30 AM</option>
+                <option value="11">5:00 AM</option>
+                <option value="12">5:30 AM</option>
+                <option value="13">6:00 AM</option>
+                <option value="14">6:30 AM</option>
+                <option value="15">7:00 AM</option>
+                <option value="16">7:30 AM</option>
+                <option value="17">8:00 AM</option>
+                <option value="18">8:30 AM</option>
+                <option value="19">9:00 AM</option>
+                <option value="20">9:30 AM</option>
+                <option value="21">10:00 AM</option>
+                <option value="22">10:30 AM</option>
+                <option value="23">11:00 AM</option>
+                <option value="24">11:30 AM</option>
+                <option value="25">12:00 PM</option>
+                <option value="26">12:30 PM</option>
+                <option value="27">1:00 PM</option>
+                <option value="28">1:30 PM</option>
+                <option value="29">2:00 PM</option>
+                <option value="30">2:30 PM</option>
+                <option value="31">3:00 PM</option>
+                <option value="32">3:30 PM</option>
+                <option value="33">4:00 PM</option>
+                <option value="34">4:30 PM</option>
+                <option value="35">5:00 PM</option>
+                <option value="36">5:30 PM</option>
+                <option value="37">6:00 PM</option>
+                <option value="38">6:30 PM</option>
+                <option value="39">7:00 PM</option>
+                <option value="40">7:30 PM</option>
+                <option value="41">8:00 PM</option>
+                <option value="42">8:30 PM</option>
+                <option value="43">9:00 PM</option>
+                <option value="44">9:30 PM</option>
+                <option value="45">10:00 PM</option>
+                <option value="46">10:30 PM</option>
+                <option value="47">11:00 PM</option>
+                <option value="48">11:30 PM</option>
+              </select>
+            <input class="return-date" id="returnDate" type="date">
+            <select id="returnTime" class="form-select" aria-label="small select example">
+                <option selected>Return</option>
+                <option value="1">12:00 AM</option>
+                <option value="2">12:30 AM</option>
+                <option value="3">1:00 AM</option>
+                <option value="4">1:30 AM</option>
+                <option value="5">2:00 AM</option>
+                <option value="6">2:30 AM</option>
+                <option value="7">3:00 AM</option>
+                <option value="8">3:30 AM</option>
+                <option value="9">4:00 AM</option>
+                <option value="10">4:30 AM</option>
+                <option value="11">5:00 AM</option>
+                <option value="12">5:30 AM</option>
+                <option value="13">6:00 AM</option>
+                <option value="14">6:30 AM</option>
+                <option value="15">7:00 AM</option>
+                <option value="16">7:30 AM</option>
+                <option value="17">8:00 AM</option>
+                <option value="18">8:30 AM</option>
+                <option value="19">9:00 AM</option>
+                <option value="20">9:30 AM</option>
+                <option value="21">10:00 AM</option>
+                <option value="22">10:30 AM</option>
+                <option value="23">11:00 AM</option>
+                <option value="24">11:30 AM</option>
+                <option value="25">12:00 PM</option>
+                <option value="26">12:30 PM</option>
+                <option value="27">1:00 PM</option>
+                <option value="28">1:30 PM</option>
+                <option value="29">2:00 PM</option>
+                <option value="30">2:30 PM</option>
+                <option value="31">3:00 PM</option>
+                <option value="32">3:30 PM</option>
+                <option value="33">4:00 PM</option>
+                <option value="34">4:30 PM</option>
+                <option value="35">5:00 PM</option>
+                <option value="36">5:30 PM</option>
+                <option value="37">6:00 PM</option>
+                <option value="38">6:30 PM</option>
+                <option value="39">7:00 PM</option>
+                <option value="40">7:30 PM</option>
+                <option value="41">8:00 PM</option>
+                <option value="42">8:30 PM</option>
+                <option value="43">9:00 PM</option>
+                <option value="44">9:30 PM</option>
+                <option value="45">10:00 PM</option>
+                <option value="46">10:30 PM</option>
+                <option value="47">11:00 PM</option>
+                <option value="48">11:30 PM</option>
+              </select>
+              <p class="price-match">We do price matching!</p>
+              <div class="errorMessagesDiv">
+              <div id="error-message" class="error-message"></div>
+              <div id="error-message-location" class="error-message"></div>
+              <div id="error-message-date" class="error-message"></div>
+              <div id="error-message-pickup-time" class="error-message"></div>
+              <div id="error-message-return-time" class="error-message"></div>
+            </div>
+              <button class="search-btn" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+
+    <section class="cars">
+    <div class="deals-h1">
+      <h1 class="hot-deals">Hot Deals <img class="flame" src="./icons/hot-deal.png" alt=""></h1>
+    </div>
+      <div class="cars-grid">
+        <div class="car-grid-item">
+          <div class="car-photo-container">
+            <img class="car-photo" src="./carphotos/2013altima.webp" alt="">
+          </div>
+          <div class="car-details">
+            <h2>Sedan</h2>
+            <p>Nissan Altima</p>
+            <p class="car-specs">
+              <img class="transmission-icon" src="./icons/transmission.png"> Automatic
+              <img class="passengers-icon" src="./icons/user.png" alt="">5 People
+              <img class="bags-icon" src="./icons/luggage.png">4 Bags</p>
+          </div>
+            <div class="pricing">
+              <p>$35<span>/day</span></p>
+                <a href="paymentpage.html"><button class="select-button">Select</button></a>
+            </div>
+        </div>
+          <div class="car-grid-item">
+            <div class="car-photo-container">
+              <img class="car-photo" src="./carphotos/2013civic.avif" alt="">
+            </div>
+            <div class="car-details">
+              <h2>Coupe</h2>
+              <p>Honda Civic</p>
+              <p class="car-specs">
+                <img class="transmission-icon" src="./icons/transmission.png"> Automatic
+                <img class="passengers-icon" src="./icons/user.png" alt="">2 People
+                <img class="bags-icon" src="./icons/luggage.png">4 Bags</p>
+            </div>
+            <div class="pricing">
+            <p>
+              $25<span>/day</span>
+            </p>
+            <a href="paymentpage.html"><button class="select-button">Select</button></a>
+          </div>
+          </div>
+            <div class="car-grid-item">
+              <div class="car-photo-container">
+                <img class="car-photo" src="./carphotos/2023cts.webp" alt="">
+              </div>
+            <div class="car-details">
+              <h2>Luxury</h2>
+              <p>Cadillac CTS</p>
+              <p class="car-specs">
+                <img class="transmission-icon" src="./icons/transmission.png"> Automatic
+                <img class="passengers-icon" src="./icons/user.png" alt="">5 People
+                <img class="bags-icon" src="./icons/luggage.png">4 Bags</p>
+            </div>
+            <div class="pricing">
+            <p>
+              $70<span>/day</span>
+            </p>
+            <a href=""><button class="select-button">Select</button></a>
+          </div>
+          </div>
+            <div class="car-grid-item">
+              <div class="car-photo-container">
+                <img class="car-photo" src="./carphotos/2018escape.avif" alt="">
+              </div>
+            <div class="car-details">
+              <h2>SUV</h2>
+              <p>Ford Escape</p>
+              <p class="car-specs">
+                <img class="transmission-icon" src="./icons/transmission.png"> Automatic
+                <img class="passengers-icon" src="./icons/user.png" alt="">5 People
+                <img class="bags-icon" src="./icons/luggage.png">5 Bags</p>
+            </div>
+            <div class="pricing">
+            <p>
+              $40<span>/day</span>
+            </p>
+            <a href="paymentpage.html"><button  class="select-button">Select</button></a>
+          </div>
+          </div>
+            <div class="car-grid-item">
+              <div class="car-photo-container">
+                <img class="car-photo" src="./carphotos/2020caravan.webp" alt="">
+              </div>
+            <div class="car-details">
+              <h2>Van</h2>
+              <p>Dodge Caravan</p>
+              <p class="car-specs">
+                <img class="transmission-icon" src="./icons/transmission.png"> Automatic
+                <img class="passengers-icon" src="./icons/user.png" alt="">7 People
+                <img class="bags-icon" src="./icons/luggage.png">5 Bags</p>
+            </div>
+            <div class="pricing">
+            <p>
+              $45<span>/day</span>
+            </p>
+            <a href="paymentpage.html"><button class="select-button">Select</button></a>
+          </div>
+          </div>
+        </div>
+    </section>
+    <section class="whyUs" id="whyUs">
+      <div class="whyUsDiv deals-h1">
+      <h1>Why us?</h1>
+      </div>
+
+      <ul class="WhyUsList">
+        <li><span class="listSpan">Wide Range of Vehicles:</span> Our site offers an extensive selection of vehicles to suit every need, from compact cars for city trips to spacious SUVs for family adventures.</li>
+        <li><span class="listSpan">Affordable Rates:</span> We provide competitive and transparent pricing, ensuring that customers get the best value for their money without any hidden fees.</li>
+        <li><span class="listSpan">Easy Online Booking:</span> Our user-friendly online platform allows customers to effortlessly browse, compare, and book their preferred vehicles within minutes, saving them time and hassle.</li>
+        <li><span class="listSpan">Flexible Rental Durations:</span> Whether it's a short weekend getaway or an extended vacation, our site offers flexible rental periods to accommodate various travel plans.</li>
+        <li><span class="listSpan">Convenient Pick-up and Drop-off:</span> With multiple pick-up and drop-off locations, customers can choose the most convenient points for their journeys.</li>
+        <li><span class="listSpan">24/7 Customer Support:</span> We offer round-the-clock customer support to address any queries, concerns, or assistance needed during the rental process.</li>
+        <li><span class="listSpan">Clean and Well-Maintained Cars:</span> All our vehicles undergo regular maintenance and thorough cleaning, ensuring that customers enjoy a safe and pleasant driving experience.</li>
+        <li><span class="listSpan">Cancellation Flexibility:</span> Life can be unpredictable. That's why we offer flexible cancellation options, allowing customers to adjust their plans if needed.</li>
+      </ul>
+    </section>
+    <section class="footNotes" id="footNotes">
+      <div class="contactDiv">
+      <h2>Contact</h2>
+      <ul class="contactList" name="contact">
+        <li>905-555-0155</li>
+        <li>EZRentals@mail.com</li>
+      </ul>
+      </div>
+      <div class="policies" id="policies">
+      <a href=""><p>Terms and Conditions</p></a>
+      <a href=""><p>Privacy Policy</p></a>
+      <a href=""><p>Cookie Policy</p></a>
+      </div>
+    </section>
+    <script src="form.js"></script>
+    <script src="cars.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

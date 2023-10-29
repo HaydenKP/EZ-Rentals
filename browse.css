@@ -1,0 +1,130 @@
+html {
+    margin: 0;
+    font-family: system-ui;
+}
+
+body {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    padding: 0;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.brand-bckgrnd {
+    color: white;
+    padding: 5px;
+    background-color: #ff6600;
+    border-radius: 5px;
+ }
+
+.navbar-toggler {
+    padding: 10px;
+    height: 100%;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #dd5800;
+}
+
+.browse-cars {
+    margin-right: 10px;
+}
+
+.navbarLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.filter-label {
+    padding: 10px;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.452);
+}
+
+input[type='checkbox'] {
+    accent-color: #ff6600;
+}
+
+.cars-section {
+    display: grid;
+    width: 100%;
+    place-items: center;
+}
+
+.list-of-cars {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(200px, auto);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.car-tile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 300px;
+    align-items: center;
+    color: black;
+    border: 2px solid rgba(201, 201, 201, 0.747);
+    border-radius: 5px;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}
+
+.car-tile:hover {
+    outline: 4px solid  rgb(218, 218, 218);
+}
+
+.car-photo-container {
+    margin: auto;
+}
+
+.car-name {
+    font-weight: bolder;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.price span {
+    font-size: smaller;
+}
+
+.select-button2 {
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff6600;
+}
+
+.select-button2:hover {
+    background-color: #dd5800;
+}
+
+.select-button2:active {
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 768px) {
+    .list-of-cars {
+        grid-template-columns: 1fr;
+    }
+}

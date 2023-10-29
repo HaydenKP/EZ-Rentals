@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="paymentpage.css">
+</head>
+<body>
+    <form id="form" target="_blank" action="" method="GET">
+    <section class="payment">
+        <h1>PAYMENT METHOD</h1>
+        <p id="inputTitle">Please select a payment method</p>
+        <select id="paymentMethod" class="paymentMethod" required>
+            <option value="1">Visa</option>
+            <option value="2">PayPal</option>
+            <option value="3">MasterCard</option>
+        </select>
+
+        <div class="paymentMethodGrid1">
+        <div class="cardNumberDiv">
+        <p id="inputTitle">Card number</p>
+        <input id="cardNumber" class="cardNumber" type="number" required>
+        </div>
+
+        <div class="expirationDateDiv">
+            <div>
+            <p id="inputTitle">Expiration date</p>
+            <select id="month" class="month" required>
+                <option value="selected">--</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            </div>
+            <select id="year" class="year" required>
+                <option value="selected">----</option>
+                <option value="1">2023</option>
+                <option value="2">2024</option>
+                <option value="3">2025</option>
+                <option value="4">2026</option>
+                <option value="5">2027</option>
+                <option value="6">2028</option>
+                <option value="7">2029</option>
+                <option value="8">2030</option>
+                <option value="9">2031</option>
+                <option value="10">2032</option>
+                <option value="11">2033</option>
+                <option value="12">2034</option>
+                <option value="13">2035</option>
+                <option value="14">2036</option>
+                <option value="15">2037</option>
+                <option value="16">2038</option>
+                <option value="17">2039</option>
+                <option value="18">2040</option>
+                <option value="19">2041</option>
+                <option value="20">2042</option>
+                <option value="21">2043</option>
+                <option value="22">2044</option>
+                <option value="23">2045</option>
+                <option value="24">2046</option>
+                <option value="25">2047</option>
+                <option value="26">2048</option>
+            </select>
+        <div class="securityCodeDiv">
+            <p id="inputTitle">Security code</p>
+            <input id="securityCode" type="number" required>
+        </div>
+    </div>
+        </div>
+    </section>
+
+    <section class="billingInfo">
+        <h1>BILLING INFORMATION</h1>
+
+        <div class="billingInfoGrid1">
+            <div class="firstNameDiv">
+                <p id="inputTitle">First name</p>
+                <input id="firstName" type="text" required>
+            </div>
+            <div class="lastNameDiv">
+                <p id="inputTitle">Last name</p>
+                <input id="lastName" type="text" required>
+            </div>
+            <div class="cityDiv">
+                <p id="inputTitle">City</p>
+                <input id="city" type="text" required>
+            </div>
+        </div>
+
+        <div class="billingInfoGrid2">
+            <div class="billingAddressDiv">
+            <p id="inputTitle">Billing address</p>
+            <input id="address" class="address" type="text" required>
+            </div>
+
+            <div class="provinceDiv">
+                <p id="inputTitle">Province</p>
+                <select id="province" class="province" required>
+                    <option value="selected">Select Province</option>
+                    <option value="1">Alberta</option>
+                    <option value="2">British Columbia</option>
+                    <option value="3">Manitoba</option>
+                    <option value="4">New Brunswick</option>
+                    <option value="5">Newfoundland and Labrador</option>
+                    <option value="6">Northwest Territories</option>
+                    <option value="7">Nova Scotia</option>
+                    <option value="8">Nunavut</option>
+                    <option value="9">Ontario</option>
+                    <option value="10">Prince Edward Island</option>
+                    <option value="11">Quebec</option>
+                    <option value="12">Saskatchewan</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="billingInfoGrid3">
+            <div class="billingAddress2Div">
+                <p id="inputTitle">Billing address, line 2</p>
+                <input id="address2" class="address2" type="text">
+                </div>
+                <div class="postalCodeDiv">
+                    <p id="inputTitle">Postal code</p>
+                    <input id="postalCode" class="postalCode" type="text" required>
+                </div>
+        </div>
+
+
+
+        <p id="inputTitle">Phone number</p>
+        <input id="phoneNumber" type="number" required>
+        <div class="errorMessagesDiv">
+            <div id="error-message" class="error-message"></div>
+            <div id="error-message-payment" class="error-message"></div>
+            <div id="error-message-cardNumber" class="error-message"></div>
+            <div id="error-message-expirationMonth" class="error-message"></div>
+            <div id="error-message-expirationYear" class="error-message"></div>
+            <div id="error-message-cvv" class="error-message"></div>
+            <div id="error-message-firstName" class="error-message"></div>
+            <div id="error-message-lastName" class="error-message"></div>
+            <div id="error-message-cityr" class="error-message"></div>
+            <div id="error-message-address1" class="error-message"></div>
+            <div id="error-message-province" class="error-message"></div>
+            <div id="error-message-address2" class="error-message"></div>
+            <div id="error-message-postalCode" class="error-message"></div>
+            <div id="error-message-phoneNumber" class="error-message"></div>
+          </div>
+        <button class="continueBtn" type="submit">Continue</button>
+    </section>
+    </form>
+<script src="paymentform.js"></script>
+</body>
+</html>
